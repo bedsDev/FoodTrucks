@@ -1,9 +1,9 @@
 version: "2"
 services:
   es:
-    image: elasticsearch:2.3
+    image: elasticsearch
   web:
-    image: prakhar1989/foodtrucks-web
+    image: dennismk/foodtrucks-web
     command: python app.py
     ports:
       - "5000:5000"
